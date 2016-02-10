@@ -1,6 +1,10 @@
 # GFBLEManager
 Easy to use for connecting a peripheral with a BLE Module.
 
+<img src="Preview/peripherals.png" width="200">
+<img src="Preview/connected peripheral.png" width="200">
+
+
 #How to use
 1. Use GFBLEConnector to scan for peripherals and connect to a peripheral.
 
