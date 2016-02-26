@@ -29,7 +29,7 @@ typedef void (^ScaningState)(BOOL success, NSString *message);
 
 @property (nonatomic,strong) CBCentralManager *centralManager;
 @property (nonatomic,strong) CBPeripheral *activePeripheral;
-@property (nonatomic,assign) id <GFBLEConnectorDelegate> delegate;
+@property (nonatomic,assign) __unsafe_unretained id <GFBLEConnectorDelegate> delegate;
 
 @property (nonatomic,assign) float scanTimeout;
 @property (nonatomic,assign) BOOL isConnectedToPeripheral;

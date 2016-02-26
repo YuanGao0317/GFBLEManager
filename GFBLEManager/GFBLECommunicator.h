@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, GFBLECommunicationError) {
 @interface GFBLECommunicator : NSObject
 
 @property (nonatomic,strong,readonly) CBPeripheral *activePeripheral;
-@property (nonatomic,assign) id <GFBLECommunicatorDelegate> delegate;
+@property (nonatomic,assign) __unsafe_unretained id <GFBLECommunicatorDelegate> delegate;
 @property (nonatomic,assign) GFBLECommunicationError communicationError;
 
 
