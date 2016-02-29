@@ -32,7 +32,6 @@
     return self;
 }
 
-
 #pragma mark - Communication Control
 
 // Read value from multi services
