@@ -6,6 +6,7 @@ Easy to use for connecting a peripheral with a BLE Module.
 
 
 #How to use
+
 1. Use GFBLEConnector to scan for peripherals and connect to a peripheral.
 
 1) Initiallize with 'initWithQueue:andDelegate:'. 
@@ -15,6 +16,8 @@ Easy to use for connecting a peripheral with a BLE Module.
 3) Implement its delegate method: 'bleDidDiscoverPeripheral:' to fill dataSource.
 
 4) Use 'connectPeripheral:' to connect to the selected peripheral.
+
+
 
 2. Use GFBLECommunicator to read/write data from/into the connected peripheral.
 
