@@ -115,7 +115,6 @@
 
 //    NSLog(@"Data from characheristic: %@", characteristic.UUID.UUIDString);
     
-    __weak typeof(self) weakSelf = self;
     for (int i=0;i<_servicesArray.count;i++) {
         
         CBService *s = [_servicesArray objectAtIndex:i];
@@ -123,7 +122,7 @@
         
         for (int j = 0; j < characteristicArray.count; j++) {
             CBCharacteristic *characteristic = [characteristicArray objectAtIndex:j];
-            UITableViewCell *cell = [weakSelf.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:i]];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:j inSection:i]];
             NSString *UUID1 = cell.textLabel.text;
             NSString *UUID2 = characteristic.UUID.UUIDString;
             if ([UUID1 caseInsensitiveCompare:UUID2] == NSOrderedSame) {
